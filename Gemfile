@@ -22,6 +22,12 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+  # no me arranca el unicorn con ruby-debug19 (apardo)
+  #gem 'ruby-debug19', :require => 'ruby-debug'
+  gem "better_errors"
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
